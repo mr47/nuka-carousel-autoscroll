@@ -33,7 +33,7 @@ Duration of autoscroll.
 Component that renders how its want progress of carousel. Supported two values, slideProgress and tickProgress.
 slideProgress - progress of carousel,
 tickProgress - progress of ticks based on duration.
-Simple component already writed see [demo](/tree/master/demo) and [progressIconComponent](/blob/master/src/autoScrollProgress.js)
+Simple component already writed see [demo](/demo) and [progressIconComponent](/src/autoScrollProgress.js)
 ###maxTickCount
 Timer resolution for tickProgress.
 
