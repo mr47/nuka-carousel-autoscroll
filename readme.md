@@ -1,7 +1,7 @@
 # nuka-carousel-autoscroll
 Complete solution for auto scroll in nuka-carousel.
 
-![img](http://i.imgur.com/5P1mBpJ.gifv "Title")
+![img](http://i.imgur.com/5P1mBpJ.gif "Title")
 
 Its simple as:
 ```jsx
