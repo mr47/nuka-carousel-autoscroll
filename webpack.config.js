@@ -32,7 +32,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.js']
+        extensions: ['', '.js', '.scss']
     },
     module: {
         loaders: [
