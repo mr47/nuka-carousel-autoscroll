@@ -3,9 +3,10 @@
 var webpack = require('webpack');
 var path = require('path');
 var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+//var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var cssLoaders = [
+    "style",
     "css?sourceMap&modules&localIdentName=[name]---[local]---[hash:base64:5]",
     "postcss",
     "sass?sourceMap"
@@ -32,7 +33,8 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.js', '.scss']
+        extensions: ['', '.js', '.scss'],
+        modulesDirectories: ["node_modules", "../src"]
     },
     module: {
         loaders: [
@@ -43,7 +45,7 @@ module.exports = {
             },
             {
                 test: /\.scss/,
-                loader: ExtractTextPlugin.extract("style-loader", cssLoaders.join("!"))
+                loader: cssLoaders.join("!")
             },
             {
                 test: /\.(png|jpg)$/,
