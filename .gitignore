@@ -31,7 +31,3 @@ npm-debug.log
 
 # Assets
 assets.json
-
-# Build directory
-public/build/*
-/dist
