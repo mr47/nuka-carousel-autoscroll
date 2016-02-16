@@ -1,6 +1,8 @@
 # nuka-carousel-autoscroll
 Complete solution for auto scroll in nuka-carousel.
 
+[Imgur](http://i.imgur.com/eXplg7g.gif?1)
+
 Its simple as:
 ```jsx
 import NukaCarousel from 'nuka-carousel';
