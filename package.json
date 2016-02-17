@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:webpack": "webpack --config webpack.config.dist --colors -p && npm",
+    "build:webpack": "webpack --config webpack.config.dist --colors -p",
     "build:babel": "babel ./src/ --out-dir=lib",
     "build": "npm run build:babel && npm run build:webpack",
     "start": "webpack-dev-server"
