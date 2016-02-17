@@ -55,7 +55,7 @@ export class Bullet extends Component{
         return {
             border: 0,
             background: 'transparent',
-            color: '#dedede',
+            color: '#cc181e',
             cursor: 'pointer',
             padding: 10,
             outline: 0,
