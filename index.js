@@ -1,7 +1,7 @@
 'use strict';
 
-var Decorator = require('./dist/autoScroll');
-var ProgressIcon = require('./dist/progressIcon');
+var Decorator = require('./lib/autoScroll');
+var ProgressIcon = require('./lib/autoScrollProgress');
 
 module.exports = Decorator;
 module.exports.ProgressIcon = ProgressIcon;

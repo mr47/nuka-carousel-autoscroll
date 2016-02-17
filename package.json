@@ -1,11 +1,13 @@
 {
   "name": "nuka-carousel-autoscroll",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Nuka carousel autoscroll solution",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.dist --colors -p",
+    "build:webpack": "webpack --config webpack.config.dist --colors -p && npm",
+    "build:babel": "babel ./src/ --out-dir=lib",
+    "build": "npm run build:babel && npm run build:webpack",
     "start": "webpack-dev-server"
   },
   "repository": {
@@ -21,7 +23,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "^6.3.1",
-    "babel": "^6.5.1",
+    "babel-cli": "^6.5.1",
     "babel-core": "^6.5.1",
     "babel-loader": "^6.2.2",
     "babel-plugin-react-transform": "^2.0.0",
