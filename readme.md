@@ -1,4 +1,3 @@
-# UNSTABLE!
 # nuka-carousel-autoscroll
 Complete solution for auto scroll in nuka-carousel.
 
