@@ -1,6 +1,6 @@
 'use strict';
 
-import { NukaDecorate } from '../src/autoScroll';
+import NukaDecorate from '../index';
 import ProgressIcon from '../src/autoScrollProgress';
 import NukaCarousel from 'nuka-carousel';
 import React from 'react';
