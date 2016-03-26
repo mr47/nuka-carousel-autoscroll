@@ -94,7 +94,7 @@ export default function(options = {}) {
                 const { children } = this.props;
                 return (
                     <DecoratedComponent progress={this.state.progress} tickProgress={this.state.tickProgress} {...this.props}>
-                        { children }
+                        { children?children: "" }
                     </DecoratedComponent>
                 );
             }
