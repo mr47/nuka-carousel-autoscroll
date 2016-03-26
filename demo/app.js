@@ -12,7 +12,6 @@ window.React = React;
 const Nuka = NukaDecorate({
     duration: 3500,
     progressComponent: ProgressIcon
-
 })(NukaCarousel);
 
 class App extends React.Component{

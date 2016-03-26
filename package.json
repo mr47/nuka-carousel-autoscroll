@@ -8,7 +8,8 @@
     "build:webpack": "webpack --config webpack.config.dist --colors -p",
     "build:babel": "babel ./src/ --out-dir=lib",
     "build": "npm run build:babel && npm run build:webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "preversion": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
