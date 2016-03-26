@@ -1,7 +1,7 @@
 # nuka-carousel-autoscroll
 Complete solution for auto scroll in nuka-carousel.
 
-![img](http://i.imgur.com/6ZYe23P.gif "nuka-carousel auto scroll")
+![img](http://i.imgur.com/KYT5knc.gif "nuka-carousel auto scroll")
 
 Its simple as:
 ```jsx
@@ -33,7 +33,7 @@ Duration of autoscroll.
 Component that renders how its want progress of carousel. Supported two values, slideProgress and tickProgress.
 slideProgress - progress of carousel,
 tickProgress - progress of ticks based on duration.
-Simple component already writed see [demo](/demo) and [progressIconComponent](/src/autoScrollProgress.js)
+Simple component already written see [demo](/demo) and [progressIconComponent](/src/autoScrollProgress.js)
 ###maxTickCount
 Timer resolution for tickProgress.
 
