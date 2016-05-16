@@ -32,10 +32,15 @@ function NukaDecorate(options){
             static childContextTypes = {
                 _nuka: PropTypes.any.isRequired
             };
+            componentWillMount(){
+                if (!options.progressComponent || !options.progressComponent instanceof Component){
+                    console && console.warn && console.warn("NukaCarouselAutoscroll: Please define and progressIcon component.");
+                }
+            }
             componentDidMount(){
                 this.setState({
                     _nuka: this._nuka
-                })
+                });
             }
             getChildContext() {
                 return {

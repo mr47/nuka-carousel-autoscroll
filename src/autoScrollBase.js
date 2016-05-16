@@ -75,6 +75,9 @@ export default function(options = {}) {
                 const { slideCount, slidesToScroll } = this.props;
                 this._indexes = this.getIndexes(slideCount, slidesToScroll);
             }
+            shouldComponentUpdate(nextProps, nextState){
+                return this.state.progress!==nextState.progress;
+            }
             componentDidMount(){
                 this.updateIndexes();
                 this.initAutoScroll();

@@ -1,5 +1,5 @@
 "use strict";
-
+import shallowCompare from 'react-addons-shallow-compare';
 import React,{Component, PropTypes} from 'react';
 
 export class Bullet extends Component{
@@ -9,6 +9,9 @@ export class Bullet extends Component{
         goToSlide: PropTypes.func.isRequired,
         currentSlide: PropTypes.number
     };
+    shouldComponentUpdate(nextProps, nextState){
+        return shallowCompare(this, nextProps, nextState);
+    }
     render() {
         const {slideCount, slidesToScroll, goToSlide, currentSlide} = this.props;
         var indexes = this.getIndexes(slideCount, slidesToScroll);

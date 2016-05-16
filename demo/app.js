@@ -1,11 +1,12 @@
 'use strict';
 
-import NukaDecorate from '../dist/autoscroll';
-import ProgressIcon from '../dist/progressIcon';
+import NukaDecorate from '../src/autoscroll';
+import ProgressIcon from '../src/autoScrollProgress';
 
 import NukaCarousel from 'nuka-carousel';
 import React from 'react';
 import ReactDom from 'react-dom';
+import 'expose?Perf!react-addons-perf';
 
 window.React = React;
 
